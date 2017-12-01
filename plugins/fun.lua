@@ -146,7 +146,7 @@ function run(msg, matches)
 		text = text..'\nغروب آفتاب: '..data.Sunset
 		text = text..'\nاذان مغرب: '..data.Maghrib
 		text = text..'\nعشاء : '..data.Isha
-		text = text..'\n@titanteams\n'
+		text = text..'\n@menyatore\n'
 		return tdcli.sendMessage(msg.chat_id_, 0, 1, text, 1, 'html')
 	end
 --------------------------------
@@ -210,7 +210,7 @@ function run(msg, matches)
 	end
 --------------------------------
 	if matches[1]:lower() == 'ساعت' then
-		local url , res = http.request('http://api.gpmod.ir/time/')
+		local url , res = http.request('http://irapi.ir/time')
 		if res ~= 200 then
 			return "No connection"
 		end
@@ -232,7 +232,7 @@ if matches[1] == 'ویس' then
       else
   local url = "http://tts.baidu.com/text2audio?lan=en&ie=UTF-8&text="..textc
   local file = download_to_file(url,'BD-Reborn.mp3')
- 				tdcli.sendDocument(msg.to.id, 0, 0, 1, nil, file, '@titantims', dl_cb, nil)
+ 				tdcli.sendDocument(msg.to.id, 0, 0, 1, nil, file, '@menyatore', dl_cb, nil)
    end
 end
 
@@ -240,7 +240,7 @@ end
 	if matches[1] == "ترجمه" then 
 		url = https.request('https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20160119T111342Z.fd6bf13b3590838f.6ce9d8cca4672f0ed24f649c1b502789c9f4687a&format=plain&lang='..URL.escape(matches[2])..'&text='..URL.escape(matches[3]))
 		data = json:decode(url)
-		return 'زبان : '..data.lang..'\nترجمه : '..data.text[1]..'\n____________________\n @titantims :)'
+		return 'زبان : '..data.lang..'\nترجمه : '..data.text[1]..'\n____________________\n @menyatore :)'
 	end
 --------------------------------
 	if matches[1]:lower() == 'کوتاه' then
@@ -257,7 +257,7 @@ end
 		local opizo = http.request('http://api.gpmod.ir/shorten/?url='..URL.escape(shortlink)..'&username=mersad565@gmail.com')
 		local u2s = http.request('http://u2s.ir/?api=1&return_text=1&url='..URL.escape(shortlink))
 		local llink = http.request('http://llink.ir/yourls-api.php?signature=a13360d6d8&action=shorturl&url='..URL.escape(shortlink)..'&format=simple')
-		local text = ' 🌐لینک اصلی :\n'..check_markdown(data.data.long_url)..'\n\nلینکهای کوتاه شده با 6 سایت کوتاه ساز لینک : \n》کوتاه شده با bitly :\n___________________________\n'..check_markdown(data.data.url)..'\n___________________________\n》کوتاه شده با yeo :\n'..check_markdown(yeo)..'\n___________________________\n》کوتاه شده با اوپیزو :\n'..check_markdown(opizo)..'\n___________________________\n》کوتاه شده با u2s :\n'..check_markdown(u2s)..'\n___________________________\n》کوتاه شده با llink : \n'..check_markdown(llink)..'\n___________________________\n》لینک کوتاه شده با yon : \nyon.ir/'..check_markdown(jdat.output)..'\n____________________\n @totantims :)'
+		local text = ' 🌐لینک اصلی :\n'..check_markdown(data.data.long_url)..'\n\nلینکهای کوتاه شده با 6 سایت کوتاه ساز لینک : \n》کوتاه شده با bitly :\n___________________________\n'..check_markdown(data.data.url)..'\n___________________________\n》کوتاه شده با yeo :\n'..check_markdown(yeo)..'\n___________________________\n》کوتاه شده با اوپیزو :\n'..check_markdown(opizo)..'\n___________________________\n》کوتاه شده با u2s :\n'..check_markdown(u2s)..'\n___________________________\n》کوتاه شده با llink : \n'..check_markdown(llink)..'\n___________________________\n》لینک کوتاه شده با yon : \nyon.ir/'..check_markdown(jdat.output)..'\n____________________\n @menyatore :)'
 		return tdcli.sendMessage(msg.chat_id_, 0, 1, text, 1, 'html')
 	end
 --------------------------------
