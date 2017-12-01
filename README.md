@@ -1,7 +1,7 @@
 <p 
     <div align="center">
     <a href=""><font size="100">کانال ما</font></a>
-    <h2><p dir="rtl"><center>CREATEBOT channel #MegaCli</center>
+    <h2><p dir="rtl"><center>CREATEBOT channel #menyatore</center>
     <br>
     <a href="https://telegram.me/fucksoon">
         <img src="http://upir.ir/951/guest/Untitled-7.png" hspace="10" width="150">
@@ -61,7 +61,7 @@
 <pre>
 <span>killall screen</span>
 <span>killall .telegram-cli</span>
-<span>cd parsol</span>
+<span>cd antispam</span>
 <span>screen ./parsol.sh</span>
 </pre>
 <h6 dir="rtl">ابتدا یک توکن از @botfather دریافت کنید سپس توکن رو به جای عبارت [token] در auto.sh قرار دهید و کد های زیر را در ترمینال وارد کنید
