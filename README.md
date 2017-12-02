@@ -3,7 +3,7 @@
     <a href=""><font size="100">کانال ما</font></a>
     <h2><p dir="rtl"><center>CREATEBOT channel #menyatore</center>
     <br>
-    <a href="https://telegram.me/fucksoon">
+    <a href="https://telegram.me/EHSANPAIZ">
         <img src="http://upir.ir/951/guest/Untitled-7.png" hspace="10" width="150">
     </a>
     <a href="https://telegram.me/fucksoon">
